@@ -398,10 +398,6 @@ section {
   .home .box .content h3,p{
     font-size: 50px;
   }
-  .contact .row form {
-    width: 38rem;
-    text-align: center;
-  }
   .quick-links {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -427,7 +423,7 @@ section {
 
 @media (max-width: 450px) {
   html {
-    font-size: 65%;
+    font-size: 60%;
   }
   .services .box-container {
     display: flex;
@@ -436,7 +432,7 @@ section {
     justify-content: center;
   }
   .contact .row form {
-    width: 37rem;
+    width: 32rem;
     text-align: center;
   }
 }
