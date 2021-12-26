@@ -23,7 +23,7 @@
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
+  
   scroll-behavior: smooth;
   scroll-padding-top: 8rem;
 }
@@ -40,10 +40,13 @@ html::-webkit-scrollbar-thumb {
   background: var(--red);
   border-radius: 5rem;
 }
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
 
 body {
   background: var(--white);
-  overflow-x: hidden;
 }
 
 body.active {
