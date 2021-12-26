@@ -41,7 +41,6 @@ html::-webkit-scrollbar-thumb {
   border-radius: 5rem;
 }
 
-
 body {
   background: var(--white);
 }
@@ -371,7 +370,9 @@ section {
 }
 
 @media (max-width: 768px) {
-  
+  html {
+    font-size: 65%;
+  }
   .header #menu-btn {
     display: inline-block;
   }
@@ -438,9 +439,6 @@ section {
 }
 
 @media (max-width: 450px) {
-  html {
-    font-size: 65%;
-  }
   
   .services .box-container {
     display: flex;
