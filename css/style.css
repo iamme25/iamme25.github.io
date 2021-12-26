@@ -43,6 +43,7 @@ html::-webkit-scrollbar-thumb {
 
 body {
   background: var(--white);
+  overflow-x: hidden;
 }
 
 body.active {
