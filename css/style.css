@@ -42,7 +42,9 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
+  overflow-x: hidden;
   background: var(--white);
+  position: relative;
 }
 
 body.active {
