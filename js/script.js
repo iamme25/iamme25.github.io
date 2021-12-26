@@ -8,13 +8,28 @@ menu.onclick = () =>{
 
 let themeBtn = document.querySelector('#theme-btn');
 
+if(localStorage.getItem('theme') == null){
+    localStorage.setItem('theme', 'light')
+}
+
+let localData = localStorage.getItem('theme')
+
+if (localData == 'light'){
+    document.body.classList.remove('active');
+}
+else if(localData == 'dark'){
+    document.body.classList.add('active');
+}
+
 themeBtn.onclick = () =>{
     themeBtn.classList.toggle('fa-sun');
 
     if(themeBtn.classList.contains('fa-sun')){
         document.body.classList.add('active');
+        localStorage.setItem('theme', 'dark')
     }else{
         document.body.classList.remove('active');
+        localStorage.setItem('theme', 'dark')
     }
 };
 
