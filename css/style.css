@@ -423,7 +423,7 @@ section {
 
 @media (max-width: 450px) {
   html {
-    font-size: 60%;
+    font-size: 50%;
   }
   .services .box-container {
     display: flex;
@@ -432,7 +432,7 @@ section {
     justify-content: center;
   }
   .contact .row form {
-    width: 32rem;
+    width: 30rem;
     text-align: center;
   }
 }
