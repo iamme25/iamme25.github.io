@@ -23,7 +23,7 @@
 
 html {
   font-size: 62.5%;
-  
+  overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 8rem;
 }
@@ -41,7 +41,6 @@ html::-webkit-scrollbar-thumb {
   border-radius: 5rem;
 }
 html, body {
-  overflow-x: hidden;
   max-width: 100%;
 }
 
