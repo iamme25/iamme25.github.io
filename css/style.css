@@ -40,9 +40,7 @@ html::-webkit-scrollbar-thumb {
   background: var(--red);
   border-radius: 5rem;
 }
-html, body {
-  max-width: 100%;
-}
+
 
 body {
   background: var(--white);
@@ -373,9 +371,7 @@ section {
 }
 
 @media (max-width: 768px) {
-  html {
-    font-size: 65%;
-  }
+  
   .header #menu-btn {
     display: inline-block;
   }
@@ -442,6 +438,9 @@ section {
 }
 
 @media (max-width: 450px) {
+  html {
+    font-size: 65%;
+  }
   
   .services .box-container {
     display: flex;
