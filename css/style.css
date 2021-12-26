@@ -370,9 +370,7 @@ section {
 }
 
 @media (max-width: 768px) {
-  html {
-    font-size: 65%;
-  }
+  
   .header #menu-btn {
     display: inline-block;
   }
@@ -439,7 +437,9 @@ section {
 }
 
 @media (max-width: 450px) {
-  
+  html {
+    font-size: 65%;
+  }
   .services .box-container {
     display: flex;
     flex-direction: column;
