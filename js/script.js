@@ -9,16 +9,19 @@ menu.onclick = () =>{
 let themeBtn = document.querySelector('#theme-btn');
 
 if(localStorage.getItem('theme') == null){
-    localStorage.setItem('theme', 'light')
+    localStorage.setItem('theme', 'light');
 }
 
-let localData = localStorage.getItem('theme')
+let localData = localStorage.getItem('theme');
 
-if (localData == 'light'){
+if(localData == 'light'){
     document.body.classList.remove('active');
+
 }
 else if(localData == 'dark'){
+    themeBtn.classList.toggle('fa-sun');
     document.body.classList.add('active');
+
 }
 
 themeBtn.onclick = () =>{
@@ -26,10 +29,10 @@ themeBtn.onclick = () =>{
 
     if(themeBtn.classList.contains('fa-sun')){
         document.body.classList.add('active');
-        localStorage.setItem('theme', 'dark')
+        localStorage.setItem('theme', 'dark');
     }else{
         document.body.classList.remove('active');
-        localStorage.setItem('theme', 'dark')
+        localStorage.setItem('theme', 'light');
     }
 };
 
