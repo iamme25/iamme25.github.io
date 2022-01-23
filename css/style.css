@@ -16,7 +16,6 @@
   outline: none;
   border: none;
   text-decoration: none;
-  text-transform: capitalize;
   -webkit-transition: all .2s linear;
   transition: all .2s linear;
 }
@@ -74,7 +73,7 @@ section {
 
 .heading {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   font-size: 4rem;
   color: var(--black);
 }
@@ -201,12 +200,11 @@ section {
 }
 
 .services .box-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: repeat(2, 31rem);
-      grid-template-columns: repeat(2, 31rem);
+  display: -ms-flex;
+  display: flex;
   gap: 2rem;
   justify-content: center;
+  
 }
 
 .services .box-container .box {
@@ -214,6 +212,8 @@ section {
   padding: 2rem;
   background: var(--light-bg);
   border-radius: .5rem;
+  height: 35rem;
+  width: 31rem;
 }
 
 .services .box-container .box img {
@@ -222,7 +222,7 @@ section {
 }
 
 .services .box-container .box h3 {
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   font-size: 2rem;
   color: var(--black);
 }
@@ -234,15 +234,22 @@ section {
 }
 
 .about .box-container {
-  -webkit-columns: 3 25rem;
-          columns: 3 25rem;
-  gap: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  
 }
 
-.about .box-container img {
-  margin-bottom: 2rem;
-  width: 100%;
-  border-radius: .5rem;
+.about .box-container  h3 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  color: var(--black);
+}
+
+.about .box-container  p {
+  font-size: 2rem;
+  color: var(--light-color);
 }
 
 
@@ -410,6 +417,14 @@ section {
   .home .box .content h3,p{
     font-size: 50px;
   }
+  .services .box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
   .quick-links {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -441,8 +456,9 @@ section {
     font-size: 50%;
   }
   .services .box-container {
-    display: grid;
-    grid-template-columns: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 2rem;
     justify-content: center;
   }
